@@ -3,6 +3,16 @@ backend:
   branch: main
 media_folder: "public/images/uploads"
 public_folder: "/images/uploads"
+media_library:
+  name: uploadcare
+  config:
+    publicKey: "demopublickey" # Replace with your Uploadcare public key
+    multiple: false
+    tabs: "file camera url facebook gdrive gphotos"
+    effects: "crop,rotate,enhance,sharp,grayscale"
+    imageShrink: "1024x1024"
+    previewStep: true
+    clearable: true
 collections:
   - name: "costa-rica"
     label: "Costa Rica Gallery"
@@ -16,11 +26,8 @@ collections:
           name: "image",
           widget: "image",
           allow_multiple: false,
-          media_library: {
-            config: {
-              multiple: false,
-              crop: true
-            }
+          config: {
+            multiple: false
           }
         }
   - name: "colombia"
@@ -35,11 +42,8 @@ collections:
           name: "image",
           widget: "image",
           allow_multiple: false,
-          media_library: {
-            config: {
-              multiple: false,
-              crop: true
-            }
+          config: {
+            multiple: false
           }
         }
   - name: "canada"
@@ -54,11 +58,8 @@ collections:
           name: "image",
           widget: "image",
           allow_multiple: false,
-          media_library: {
-            config: {
-              multiple: false,
-              crop: true
-            }
+          config: {
+            multiple: false
           }
         }
   - name: "netherlands"
@@ -73,10 +74,7 @@ collections:
           name: "image",
           widget: "image",
           allow_multiple: false,
-          media_library: {
-            config: {
-              multiple: false,
-              crop: true
-            }
+          config: {
+            multiple: false
           }
         }
