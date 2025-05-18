@@ -64,7 +64,7 @@ const Gallery: React.FC = () => {
             >
               <div 
                 className={`relative overflow-hidden ${
-                  index === 1 ? 'h-[200px]' : 'h-[400px]'
+                  index === 1 ? 'pb-[25%]' : 'pb-[66.66%]'
                 }`}
               >
                 <img
