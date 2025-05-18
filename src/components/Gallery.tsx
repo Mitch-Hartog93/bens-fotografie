@@ -2,21 +2,15 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { galleryImages } from '../data/gallery-data';
 
-interface GalleryImage {
-  id: number;
-  src: string;
-  alt: string;
-  category: string;
-  style?: React.CSSProperties;
-}
-
 const categories = ['costa-rica', 'colombia', 'canada', 'netherlands'];
 
 const Gallery: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState('costa-rica');
   const [selectedImage, setSelectedImage] = useState<GalleryImage | null>(null);
 
-  const filteredImages = galleryImages.filter(image => image.category === selectedCategory).slice(0, 3);
+  const filteredImages = galleryImages
+    .filter(image => image.category === selectedCategory)
+    .slice(0, 3);
 
   const getCategoryName = (category: string) => {
     switch(category) {
@@ -62,18 +56,17 @@ const Gallery: React.FC = () => {
 
         {/* Gallery Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filteredImages.map((image) => (
+          {filteredImages.map((image, index) => (
             <div
-              key={image.id}
+              key={index}
               className="overflow-hidden rounded-lg shadow-lg group cursor-pointer transition-all duration-300 hover:shadow-xl"
               onClick={() => setSelectedImage(image)}
             >
               <div className="relative pb-[66.66%] overflow-hidden">
                 <img
-                  src={image.src}
-                  alt={image.alt}
+                  src={image.image}
+                  alt={image.title}
                   className="absolute inset-0 w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
-                  style={image.style}
                 />
                 <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
               </div>
@@ -102,10 +95,9 @@ const Gallery: React.FC = () => {
             onClick={(e) => e.stopPropagation()}
           >
             <img
-              src={selectedImage.src}
-              alt={selectedImage.alt}
+              src={selectedImage.image}
+              alt={selectedImage.title}
               className="max-w-full max-h-[85vh] object-contain"
-              style={selectedImage.style}
             />
             <button
               className="absolute top-4 right-4 text-white bg-black bg-opacity-50 rounded-full p-2 hover:bg-opacity-70 transition-all"
