@@ -11,13 +11,14 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - label: "Gallery"
-        name: "gallery"
-        widget: "list"
-        summary: '{{fields.image}}'
-        field: { label: "Image", name: "image", widget: "image", multiple: true, choose_url: false }
       - { label: "Description", name: "description", widget: "text" }
       - { label: "Category", name: "category", widget: "hidden", default: "costa-rica" }
+      - label: "Images"
+        name: "images"
+        widget: "image"
+        media_library:
+          config:
+            multiple: true
 
   - name: "colombia"
     label: "Colombia Gallery"
@@ -26,13 +27,14 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - label: "Gallery"
-        name: "gallery"
-        widget: "list"
-        summary: '{{fields.image}}'
-        field: { label: "Image", name: "image", widget: "image", multiple: true, choose_url: false }
       - { label: "Description", name: "description", widget: "text" }
       - { label: "Category", name: "category", widget: "hidden", default: "colombia" }
+      - label: "Images"
+        name: "images"
+        widget: "image"
+        media_library:
+          config:
+            multiple: true
 
   - name: "canada"
     label: "Canada Gallery"
@@ -41,13 +43,14 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - label: "Gallery"
-        name: "gallery"
-        widget: "list"
-        summary: '{{fields.image}}'
-        field: { label: "Image", name: "image", widget: "image", multiple: true, choose_url: false }
       - { label: "Description", name: "description", widget: "text" }
       - { label: "Category", name: "category", widget: "hidden", default: "canada" }
+      - label: "Images"
+        name: "images"
+        widget: "image"
+        media_library:
+          config:
+            multiple: true
 
   - name: "netherlands"
     label: "Netherlands Gallery"
@@ -56,10 +59,11 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - label: "Gallery"
-        name: "gallery"
-        widget: "list"
-        summary: '{{fields.image}}'
-        field: { label: "Image", name: "image", widget: "image", multiple: true, choose_url: false }
       - { label: "Description", name: "description", widget: "text" }
       - { label: "Category", name: "category", widget: "hidden", default: "netherlands" }
+      - label: "Images"
+        name: "images"
+        widget: "image"
+        media_library:
+          config:
+            multiple: true
