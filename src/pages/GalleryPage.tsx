@@ -1,18 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-
-interface GalleryImage {
-  title: string;
-  category: string;
-  image: string;
-  description: string;
-}
+import { GalleryImage, galleryImages } from '../data/gallery-data';
 
 const GalleryPage: React.FC = () => {
   const { category } = useParams<{ category: string }>();
   const [images, setImages] = useState<GalleryImage[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
 
   const getCategoryName = (cat: string | undefined) => {
     switch(cat) {
@@ -30,55 +22,13 @@ const GalleryPage: React.FC = () => {
   };
 
   useEffect(() => {
-    const fetchImages = async () => {
-      try {
-        setLoading(true);
-        setError(null);
-        
-        // Fetch the content from the content/gallery directory
-        const response = await fetch('/content/gallery/index.json');
-        if (!response.ok) {
-          throw new Error('Failed to fetch gallery images');
-        }
-        
-        const data = await response.json();
-        
-        // Filter images by category if provided
-        const filteredImages = category
-          ? data.filter((image: GalleryImage) => image.category === category)
-          : data;
-          
-        setImages(filteredImages);
-      } catch (err) {
-        console.error('Error fetching images:', err);
-        setError('Er is een fout opgetreden bij het laden van de afbeeldingen.');
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchImages();
+    // Filter images by category if provided
+    const filteredImages = category
+      ? galleryImages.filter(image => image.category === category)
+      : galleryImages;
+      
+    setImages(filteredImages);
   }, [category]);
-
-  if (loading) {
-    return (
-      <div className="min-h-screen bg-gray-50 dark:bg-gray-900 pt-20 flex items-center justify-center">
-        <div className="animate-spin rounded-full h-12 w-12 border-4 border-gray-900 dark:border-white border-t-transparent"></div>
-      </div>
-    );
-  }
-
-  if (error) {
-    return (
-      <div className="min-h-screen bg-gray-50 dark:bg-gray-900 pt-20">
-        <div className="container mx-auto px-12 py-12">
-          <div className="text-center text-red-600 dark:text-red-400">
-            <p>{error}</p>
-          </div>
-        </div>
-      </div>
-    );
-  }
 
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 pt-20">
