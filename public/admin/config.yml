@@ -8,6 +8,7 @@ collections:
     label: "Gallery"
     folder: "content/gallery"
     create: true
+    slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Category", name: "category", widget: "select", options: ["costa-rica", "colombia", "canada", "netherlands"] }
