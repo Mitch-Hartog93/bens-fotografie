@@ -69,7 +69,7 @@ const Gallery: React.FC = () => {
                   alt={image.title}
                   className="absolute inset-0 w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
                   style={{
-                    objectPosition: index === 1 ? 'center 25%' : index === 2 ? 'center 30%' : 'center center'
+                    objectPosition: index === 1 ? 'center 20%' : index === 2 ? 'center 27%' : 'center center'
                   }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
