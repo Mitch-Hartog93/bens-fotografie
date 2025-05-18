@@ -8,10 +8,10 @@ export interface GalleryImage {
 export const galleryImages: GalleryImage[] = [
   // Costa Rica
   {
-    title: "Costa Rica Regenwoud",
+    title: "Two Birds",
     category: "costa-rica",
-    image: "https://i.imgur.com/F9qBB4Y.jpg",
-    description: "Een prachtig uitzicht op het weelderige regenwoud van Costa Rica"
+    image: "/images/uploads/img_0350.jpeg",
+    description: "Costa Rica Forest"
   },
   {
     title: "Costa Rica Strand",
@@ -24,12 +24,6 @@ export const galleryImages: GalleryImage[] = [
     category: "costa-rica",
     image: "https://i.imgur.com/a9YxhzW.jpeg",
     description: "De rijke biodiversiteit van Costa Rica's wildlife"
-  },
-  {
-    title: "Two Birds",
-    category: "costa-rica",
-    image: "/images/uploads/img_0350.jpeg",
-    description: "Costa Rica Forest"
   },
 
   // Colombia
