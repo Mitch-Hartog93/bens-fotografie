@@ -22,7 +22,7 @@ export const galleryImages: GalleryImage[] = [
   {
     title: "Costa Rica Wildlife",
     category: "costa-rica",
-    image: "https://images.pexels.com/photos/1829980/pexels-photo-1829980.jpeg",
+    image: "https://i.imgur.com/a9YxhzW.jpeg",
     description: "De rijke biodiversiteit van Costa Rica's wildlife"
   },
   {
