@@ -11,7 +11,11 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Image", name: "image", widget: "image" }
+      - label: "Gallery"
+        name: "gallery"
+        widget: "list"
+        summary: '{{fields.image}}'
+        field: { label: "Image", name: "image", widget: "image" }
       - { label: "Description", name: "description", widget: "text" }
       - { label: "Category", name: "category", widget: "hidden", default: "costa-rica" }
 
@@ -22,7 +26,11 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Image", name: "image", widget: "image" }
+      - label: "Gallery"
+        name: "gallery"
+        widget: "list"
+        summary: '{{fields.image}}'
+        field: { label: "Image", name: "image", widget: "image" }
       - { label: "Description", name: "description", widget: "text" }
       - { label: "Category", name: "category", widget: "hidden", default: "colombia" }
 
@@ -33,7 +41,11 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Image", name: "image", widget: "image" }
+      - label: "Gallery"
+        name: "gallery"
+        widget: "list"
+        summary: '{{fields.image}}'
+        field: { label: "Image", name: "image", widget: "image" }
       - { label: "Description", name: "description", widget: "text" }
       - { label: "Category", name: "category", widget: "hidden", default: "canada" }
 
@@ -44,6 +56,10 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Image", name: "image", widget: "image" }
+      - label: "Gallery"
+        name: "gallery"
+        widget: "list"
+        summary: '{{fields.image}}'
+        field: { label: "Image", name: "image", widget: "image" }
       - { label: "Description", name: "description", widget: "text" }
       - { label: "Category", name: "category", widget: "hidden", default: "netherlands" }
