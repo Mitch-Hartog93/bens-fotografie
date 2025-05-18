@@ -62,11 +62,7 @@ const Gallery: React.FC = () => {
               className="overflow-hidden rounded-lg shadow-lg group cursor-pointer transition-all duration-300 hover:shadow-xl"
               onClick={() => setSelectedImage(image)}
             >
-              <div 
-                className={`relative overflow-hidden ${
-                  index === 1 ? 'pb-[25%]' : 'pb-[66.66%]'
-                }`}
-              >
+              <div className="relative pb-[66.66%] overflow-hidden">
                 <img
                   src={image.image}
                   alt={image.title}
