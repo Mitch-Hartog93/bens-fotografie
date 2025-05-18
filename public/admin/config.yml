@@ -4,13 +4,46 @@ backend:
 media_folder: "public/images/uploads"
 public_folder: "/images/uploads"
 collections:
-  - name: "gallery"
-    label: "Gallery"
-    folder: "content/gallery"
+  - name: "costa-rica"
+    label: "Costa Rica Gallery"
+    folder: "content/gallery/costa-rica"
     create: true
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Category", name: "category", widget: "select", options: ["costa-rica", "colombia", "canada", "netherlands"] }
       - { label: "Image", name: "image", widget: "image" }
       - { label: "Description", name: "description", widget: "text" }
+      - { label: "Category", name: "category", widget: "hidden", default: "costa-rica" }
+
+  - name: "colombia"
+    label: "Colombia Gallery"
+    folder: "content/gallery/colombia"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Category", name: "category", widget: "hidden", default: "colombia" }
+
+  - name: "canada"
+    label: "Canada Gallery"
+    folder: "content/gallery/canada"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Category", name: "category", widget: "hidden", default: "canada" }
+
+  - name: "netherlands"
+    label: "Netherlands Gallery"
+    folder: "content/gallery/netherlands"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Category", name: "category", widget: "hidden", default: "netherlands" }
