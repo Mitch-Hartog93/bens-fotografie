@@ -11,7 +11,18 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "text" }
-      - { label: "Image", name: "image", widget: "image" }
+      - {
+          label: "Image",
+          name: "image",
+          widget: "image",
+          allow_multiple: false,
+          media_library: {
+            config: {
+              multiple: false,
+              crop: true
+            }
+          }
+        }
   - name: "colombia"
     label: "Colombia Gallery"
     folder: "content/gallery/colombia"
@@ -19,7 +30,18 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "text" }
-      - { label: "Image", name: "image", widget: "image" }
+      - {
+          label: "Image",
+          name: "image",
+          widget: "image",
+          allow_multiple: false,
+          media_library: {
+            config: {
+              multiple: false,
+              crop: true
+            }
+          }
+        }
   - name: "canada"
     label: "Canada Gallery"
     folder: "content/gallery/canada"
@@ -27,7 +49,18 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "text" }
-      - { label: "Image", name: "image", widget: "image" }
+      - {
+          label: "Image",
+          name: "image",
+          widget: "image",
+          allow_multiple: false,
+          media_library: {
+            config: {
+              multiple: false,
+              crop: true
+            }
+          }
+        }
   - name: "netherlands"
     label: "Netherlands Gallery"
     folder: "content/gallery/netherlands"
@@ -35,4 +68,15 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "text" }
-      - { label: "Image", name: "image", widget: "image" }
+      - {
+          label: "Image",
+          name: "image",
+          widget: "image",
+          allow_multiple: false,
+          media_library: {
+            config: {
+              multiple: false,
+              crop: true
+            }
+          }
+        }
