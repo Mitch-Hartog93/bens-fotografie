@@ -8,40 +8,28 @@ export interface GalleryImage {
 export const galleryImages: GalleryImage[] = [
   // Costa Rica
   {
-    title: "Arenal Vulkaan",
+    title: "Costa Rica Regenwoud",
     category: "costa-rica",
-    image: "https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg",
-    description: "Majestueus uitzicht op de Arenal vulkaan in Costa Rica"
+    image: "https://i.imgur.com/F9qBB4Y.jpg",
+    description: "Een prachtig uitzicht op het weelderige regenwoud van Costa Rica"
   },
   {
-    title: "Monteverde Nevelwoud",
+    title: "Costa Rica Strand",
     category: "costa-rica",
-    image: "https://images.pexels.com/photos/975771/pexels-photo-975771.jpeg",
-    description: "Mistige paden door het Monteverde nevelwoud"
+    image: "https://i.imgur.com/0yHczdq.jpeg",
+    description: "Ongerept tropisch strand aan de kust van Costa Rica"
   },
   {
-    title: "Manuel Antonio Strand",
+    title: "Costa Rica Wildlife",
     category: "costa-rica",
-    image: "https://images.pexels.com/photos/1707215/pexels-photo-1707215.jpeg",
-    description: "Ongerepte stranden van Manuel Antonio National Park"
+    image: "https://images.pexels.com/photos/1829980/pexels-photo-1829980.jpeg",
+    description: "De rijke biodiversiteit van Costa Rica's wildlife"
   },
   {
-    title: "Quetzal Vogel",
+    title: "Two Birds",
     category: "costa-rica",
-    image: "https://images.pexels.com/photos/2317904/pexels-photo-2317904.jpeg",
-    description: "De zeldzame en kleurrijke Quetzal in zijn natuurlijke habitat"
-  },
-  {
-    title: "Tortuguero Kanalen",
-    category: "costa-rica",
-    image: "https://images.pexels.com/photos/2559941/pexels-photo-2559941.jpeg",
-    description: "De weelderige waterkanalen van Tortuguero National Park"
-  },
-  {
-    title: "Corcovado Regenwoud",
-    category: "costa-rica",
-    image: "https://images.pexels.com/photos/2739664/pexels-photo-2739664.jpeg",
-    description: "Het ongerepte regenwoud van Corcovado National Park"
+    image: "/images/uploads/img_0350.jpeg",
+    description: "Costa Rica Forest"
   },
 
   // Colombia
@@ -63,24 +51,6 @@ export const galleryImages: GalleryImage[] = [
     image: "https://images.pexels.com/photos/4215113/pexels-photo-4215113.jpeg",
     description: "Iconische waspalmen in de Cocora Vallei"
   },
-  {
-    title: "Guatapé",
-    category: "colombia",
-    image: "https://images.pexels.com/photos/13284755/pexels-photo-13284755.jpeg",
-    description: "De kleurrijke stad Guatapé met zijn beroemde rots"
-  },
-  {
-    title: "Tayrona National Park",
-    category: "colombia",
-    image: "https://images.pexels.com/photos/1591373/pexels-photo-1591373.jpeg",
-    description: "Tropische stranden van Tayrona National Park"
-  },
-  {
-    title: "Bogotá Street Art",
-    category: "colombia",
-    image: "https://images.pexels.com/photos/2119706/pexels-photo-2119706.jpeg",
-    description: "Levendige street art in de straten van Bogotá"
-  },
 
   // Canada
   {
@@ -101,24 +71,6 @@ export const galleryImages: GalleryImage[] = [
     image: "https://images.pexels.com/photos/1486974/pexels-photo-1486974.jpeg",
     description: "Majestueuze bergen van Jasper National Park"
   },
-  {
-    title: "Northern Lights",
-    category: "canada",
-    image: "https://images.pexels.com/photos/1693095/pexels-photo-1693095.jpeg",
-    description: "Het noorderlicht boven de Canadese wildernis"
-  },
-  {
-    title: "Vancouver Island",
-    category: "canada",
-    image: "https://images.pexels.com/photos/1578751/pexels-photo-1578751.jpeg",
-    description: "Ruige kustlijn van Vancouver Island"
-  },
-  {
-    title: "Quebec City",
-    category: "canada",
-    image: "https://images.pexels.com/photos/3573382/pexels-photo-3573382.jpeg",
-    description: "Historische architectuur van Quebec City"
-  },
 
   // Netherlands
   {
@@ -138,23 +90,5 @@ export const galleryImages: GalleryImage[] = [
     category: "netherlands",
     image: "https://images.pexels.com/photos/1379636/pexels-photo-1379636.jpeg",
     description: "Kleurrijke tulpenvelden in de lente"
-  },
-  {
-    title: "Zaanse Schans",
-    category: "netherlands",
-    image: "https://images.pexels.com/photos/2031706/pexels-photo-2031706.jpeg",
-    description: "Traditionele Nederlandse windmolens en huizen"
-  },
-  {
-    title: "Keukenhof Tuinen",
-    category: "netherlands",
-    image: "https://images.pexels.com/photos/2825095/pexels-photo-2825095.jpeg",
-    description: "Kleurrijke bloementuinen van Keukenhof"
-  },
-  {
-    title: "Giethoorn",
-    category: "netherlands",
-    image: "https://images.pexels.com/photos/1612351/pexels-photo-1612351.jpeg",
-    description: "Het Venetië van het noorden - Giethoorn"
   }
 ];
