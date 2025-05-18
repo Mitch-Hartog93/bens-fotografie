@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { galleryImages } from '../data/gallery-data';
 
 interface GalleryImage {
   id: number;
@@ -7,83 +9,6 @@ interface GalleryImage {
   category: string;
   style?: React.CSSProperties;
 }
-
-const galleryImages: GalleryImage[] = [
-  {
-    id: 1,
-    src: 'https://i.imgur.com/F9qBB4Y.jpg',
-    alt: 'Costa Rica regenwoud',
-    category: 'costa-rica'
-  },
-  {
-    id: 2,
-    src: 'https://i.imgur.com/a9YxhzW.jpeg',
-    alt: 'Costa Rica wildlife',
-    category: 'costa-rica',
-    style: { objectPosition: '0 26%' }
-  },
-  {
-    id: 3,
-    src: 'https://i.imgur.com/0yHczdq.jpeg',
-    alt: 'Costa Rica vogel',
-    category: 'costa-rica',
-    style: { objectPosition: '0 15%' }
-  },
-  {
-    id: 4,
-    src: 'https://images.pexels.com/photos/3629227/pexels-photo-3629227.jpeg',
-    alt: 'Colombiaanse straat',
-    category: 'colombia'
-  },
-  {
-    id: 5,
-    src: 'https://images.pexels.com/photos/2832039/pexels-photo-2832039.jpeg',
-    alt: 'Colombiaans landschap',
-    category: 'colombia'
-  },
-  {
-    id: 6,
-    src: 'https://images.pexels.com/photos/2832061/pexels-photo-2832061.jpeg',
-    alt: 'Colombiaanse cultuur',
-    category: 'colombia'
-  },
-  {
-    id: 7,
-    src: 'https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg',
-    alt: 'Canadese bergen',
-    category: 'canada'
-  },
-  {
-    id: 8,
-    src: 'https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg',
-    alt: 'Canadees meer',
-    category: 'canada'
-  },
-  {
-    id: 9,
-    src: 'https://images.pexels.com/photos/1796730/pexels-photo-1796730.jpeg',
-    alt: 'Canadees bos',
-    category: 'canada'
-  },
-  {
-    id: 10,
-    src: 'https://images.pexels.com/photos/1796730/pexels-photo-1796730.jpeg',
-    alt: 'Nederlandse molens',
-    category: 'netherlands'
-  },
-  {
-    id: 11,
-    src: 'https://images.pexels.com/photos/2031706/pexels-photo-2031706.jpeg',
-    alt: 'Amsterdamse grachten',
-    category: 'netherlands'
-  },
-  {
-    id: 12,
-    src: 'https://images.pexels.com/photos/1796730/pexels-photo-1796730.jpeg',
-    alt: 'Nederlands platteland',
-    category: 'netherlands'
-  }
-];
 
 const categories = ['costa-rica', 'colombia', 'canada', 'netherlands'];
 
@@ -157,12 +82,12 @@ const Gallery: React.FC = () => {
         </div>
 
         <div className="text-center mt-8">
-          <a 
-            href={`/gallery/${selectedCategory}`} 
-            className="inline-block px-6 py-3 text-gray-600 hover:text-black dark:text-gray-300 dark:hover:text-white transition-colors duration-300"
+          <Link 
+            to={`/gallery/${selectedCategory}`}
+            className="inline-block px-6 py-3 bg-black text-white dark:bg-white dark:text-black rounded-md hover:bg-gray-800 dark:hover:bg-gray-200 transition-all duration-300"
           >
             Bekijk alle foto's
-          </a>
+          </Link>
         </div>
       </div>
 
