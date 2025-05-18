@@ -15,7 +15,7 @@ collections:
         name: "gallery"
         widget: "list"
         summary: '{{fields.image}}'
-        field: { label: "Image", name: "image", widget: "image" }
+        field: { label: "Image", name: "image", widget: "image", multiple: true, choose_url: false }
       - { label: "Description", name: "description", widget: "text" }
       - { label: "Category", name: "category", widget: "hidden", default: "costa-rica" }
 
@@ -30,7 +30,7 @@ collections:
         name: "gallery"
         widget: "list"
         summary: '{{fields.image}}'
-        field: { label: "Image", name: "image", widget: "image" }
+        field: { label: "Image", name: "image", widget: "image", multiple: true, choose_url: false }
       - { label: "Description", name: "description", widget: "text" }
       - { label: "Category", name: "category", widget: "hidden", default: "colombia" }
 
@@ -45,7 +45,7 @@ collections:
         name: "gallery"
         widget: "list"
         summary: '{{fields.image}}'
-        field: { label: "Image", name: "image", widget: "image" }
+        field: { label: "Image", name: "image", widget: "image", multiple: true, choose_url: false }
       - { label: "Description", name: "description", widget: "text" }
       - { label: "Category", name: "category", widget: "hidden", default: "canada" }
 
@@ -60,6 +60,6 @@ collections:
         name: "gallery"
         widget: "list"
         summary: '{{fields.image}}'
-        field: { label: "Image", name: "image", widget: "image" }
+        field: { label: "Image", name: "image", widget: "image", multiple: true, choose_url: false }
       - { label: "Description", name: "description", widget: "text" }
       - { label: "Category", name: "category", widget: "hidden", default: "netherlands" }
