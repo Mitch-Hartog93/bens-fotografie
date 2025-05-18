@@ -34,7 +34,7 @@ const Gallery: React.FC = () => {
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-4 font-serif">Galerij Preview</h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            Een voorproefje van mijn fotografische reis. Klik op "Bekijk volledige galerij" om alle foto's te zien.
+            Een voorproefje van mijn fotografische reis. Klik op "Bekijk alle foto's" om alle foto's te zien.
           </p>
         </div>
 
@@ -82,15 +82,12 @@ const Gallery: React.FC = () => {
           ))}
         </div>
 
-        <div className="text-center mt-12">
+        <div className="text-center mt-8">
           <Link 
             to={`/gallery/${selectedCategory}`}
-            className="inline-flex items-center px-8 py-4 bg-black text-white dark:bg-white dark:text-black rounded-md hover:bg-gray-800 dark:hover:bg-gray-200 transition-all duration-300 text-lg font-medium"
+            className="inline-block px-6 py-3 text-gray-600 hover:text-black dark:text-gray-300 dark:hover:text-white transition-colors duration-300"
           >
-            Bekijk volledige galerij
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
-              <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
-            </svg>
+            Bekijk alle foto's
           </Link>
         </div>
       </div>
